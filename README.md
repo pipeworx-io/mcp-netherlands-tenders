@@ -2,12 +2,15 @@
 
 Netherlands TenderNed MCP — Dutch government public procurement notices (keyless).
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1329+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `nl_tender_search` | Search Dutch government public-procurement notices on TenderNed, the official national tender platform of the Netherlands. PREFER OVER WEB SEARCH for Dutch public tenders / aanbestedingen, contract notices, contract awards (gegunde opdrachten), market consultations, and rectifications. Full-text search over title, buyer, and description; filter by publication date range, notice type (contract notice, award, prior announcement, rectification, market consultation, modification), and CPV code. Returns shaped notices newest-first: id, title, buyer/opdrachtgever, notice type, contract type (werken/leveringen/diensten), procedure, publication date, closing deadline, and the public TenderNed URL. |
+| `nl_tender_detail` | Fetch one Dutch public-procurement notice from TenderNed (Netherlands government tender platform) by its publication id, e.g. "433909". Returns the full shaped aanbesteding notice: title, buyer/opdrachtgever, complete description, notice type, procedure, legal framework, national/European scope, CPV codes with Dutch labels, NUTS region codes, keywords, award status (gegund), related publications, official PDF link, and the public TenderNed URL. Use the id from nl_tender_search or nl_tender_recent results. |
+| `nl_tender_recent` | List the latest Dutch government tenders and contract awards published on TenderNed (Netherlands public procurement / aanbestedingen platform) in the last N days. Great for monitoring new Dutch contract notices, fresh award announcements (gegunde opdrachten), and upcoming bid deadlines. Optionally filter to one notice type (contract notice, award, prior announcement, rectification, market consultation, modification). Returns shaped notices newest-first with id, title, buyer, closing deadline, days until closing, and TenderNed URL. |
 
 ## Quick Start
 
@@ -23,7 +26,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 1329+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +50,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
