@@ -79,3 +79,13 @@ The gateway picks the right tool and fills the arguments automatically.
 ## License
 
 MIT
+
+## No MCP client? Call it over HTTP
+
+```bash
+curl -X POST https://gateway.pipeworx.io/v1/tools/nl_tender_search \
+  -H 'Content-Type: application/json' \
+  -d '{"query":"ICT diensten","notice_type":"contract notice","date_from":"2026-01-01","limit":20}'
+```
+
+No account needed for the first calls. Inspect any tool: `GET https://gateway.pipeworx.io/v1/tools/nl_tender_search`. Find one: `POST https://gateway.pipeworx.io/v1/tools/search_packs` with `{"query":"..."}`.
