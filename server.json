@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/netherlands-tenders",
   "title": "Netherlands Tenders",
   "description": "Netherlands TenderNed MCP — Dutch government public procurement notices (keyless).",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/netherlands-tenders",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-netherlands-tenders",
