@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-netherlands-tenders",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Netherlands TenderNed MCP — Dutch government public procurement notices (keyless).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "netherlands-tenders",
     "gatewaySlug": "netherlands-tenders",
-    "sourceHash": "v1-57f77a9069b890358979573c429339cee800dd905f9fd12b1076ab8eb13f7ab6",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-29e6e1943b48065f7ef3e655b41fdd78238f5e4f9f8195f028ca434ce803a072",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
